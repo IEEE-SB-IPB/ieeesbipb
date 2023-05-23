@@ -1,0 +1,51 @@
+---
+import FooterLogo from '../assets/FooterLogo.svg';
+import mail from '../assets/icons/mail.svg';
+import phone from '../assets/icons/phone.svg';
+import yt from '../assets/icons/yt.svg';
+import ig from '../assets/icons/ig.svg';
+import pinpoint from '../assets/icons/pinpoint.svg';
+import bag from '../assets/icons/bag.svg';
+import faq from '../assets/icons/faq.svg';
+---
+
+<footer class="bg-primary">
+  <main class="container py-5">
+    <div class="row g-5 text-white">
+      <div class="col-12 col-md text-center text-md-start">
+        <img src={FooterLogo} height={124} class="img-fluid" alt="Logo">
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="row g-3 justify-content-end">
+          <div class="col-12 col-sm-4">
+            <h5 class="fw-bold">Contact</h5>
+            <img src={mail} alt="">
+            <span>info@ieee.com</span><br/>
+            <img src={phone} alt="">
+            <span>+62 812 4846 4447 (ID)</span><br/>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h5 class="fw-bold">Social Media</h5>
+            <a href="https://www.youtube.com/@ieeeipbstudentbranch2245" target="_blank" class="text-white text-decoration-none">
+              <img src={yt} alt="">
+              <span>IEEE SB IPB</span>
+            </a><br/>
+            <a href="https://www.instagram.com/ieeesbipb/" target="_blank" class="text-white text-decoration-none">
+              <img src={ig} alt="">
+              <span>ieeesbipb</span>
+            </a><br/>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h5 class="fw-bold">Links</h5>
+            <img src={pinpoint} alt="">
+            <span>Location</span><br/>
+            <img src={bag} alt="">
+            <span>Membership</span><br/>
+            <img src={faq} alt="">
+            <span>FAQ</span><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</footer>
