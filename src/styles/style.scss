@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
 
-@import "../../node_modules/bootstrap/scss/_functions";
-
 $min-contrast-ratio: 2 !default; // doesnt work
 $primary: #12679B;
 $font-family-base: 'Plus Jakarta Sans', sans-serif;
 $navbar-nav-link-padding-x: .8rem;
 
+@import "../../node_modules/bootstrap/scss/_functions";
 @import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_variables-dark";
+@import "../../node_modules/bootstrap/scss/_maps";
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "../../node_modules/bootstrap/scss/_utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "viewport-height": (
+      property: height,
+      class: vh,
+      values: (50: 50vh, 100: 100vh)
+    ),
+  )
+);
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
